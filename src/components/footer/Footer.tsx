@@ -25,7 +25,7 @@ function Footer() {
           </span>
 
           <a
-            href="https://github.com/digiwand/personal-site-v1"
+            href="https://github.com/digiwand/portfolio"
             target="_blank"
             rel="noopener noreferrer"
             className="text-link pt-16 sm:pt-0 land:pt-[5px]"
