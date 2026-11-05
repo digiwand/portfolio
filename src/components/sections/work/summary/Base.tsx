@@ -9,6 +9,7 @@ import { WorkImageConfig } from 'components/sections/work/shared/constants';
 
 interface Props {
   companyName: string;
+  companyHref?: string;
   techKeys: readonly TechKey[];
   title: string;
   subtitle: string;
@@ -25,6 +26,7 @@ function Work({ children, ...props }: Props) {
   const {
     className,
     companyName,
+    companyHref,
     title,
     subtitle,
     date,
@@ -50,7 +52,16 @@ function Work({ children, ...props }: Props) {
           </h2>
 
           <h4 className="block pt-16 sm:pt-32 pb-4 text-[var(--theme-work-sub-header)]">
-            {companyName}
+            {companyHref ? (
+              <a
+                className="text-link"
+                href={companyHref}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {companyName}
+              </a>
+            ) : companyName}
           </h4>
 
           <h5 className="text-[var(--theme-work-header)]">

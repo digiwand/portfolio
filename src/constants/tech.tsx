@@ -90,6 +90,10 @@ const TECH = {
     displayName: 'Ethereum',
     href: 'https://ethereum.org/en/',
   },
+  EXPO: {
+    displayName: 'Expo',
+    href: 'https://expo.dev/',
+  },
   EXPRESSJS: {
     displayName: 'Express.js',
     href: 'https://expressjs.com/',
@@ -177,10 +181,18 @@ const TECH = {
     displayName: 'PostgreSQL',
     href: 'https://www.postgresql.org/',
   },
+  PWA: {
+    displayName: 'PWA',
+    href: 'https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps',
+  },
   REACTJS: {
     displayName: 'React',
     href: 'https://reactjs.org/',
     imgElem: <img className="img-tech" alt="ReactJS" src="svg/tech/reactjs.svg" height="48rem" width="67.88rem" />,
+  },
+  REACT_NATIVE: {
+    displayName: 'React Native',
+    href: 'https://reactnative.dev/',
   },
   REGEX: {
     displayName: 'Regex',
@@ -202,6 +214,10 @@ const TECH = {
   STORYBOOK: {
     displayName: 'Storybook',
     href: 'https://storybook.js.org/',
+  },
+  TYPESCRIPT: {
+    displayName: 'TypeScript',
+    href: 'https://www.typescriptlang.org/',
   },
   VS_CODE: {
     displayName: 'VS Code',
