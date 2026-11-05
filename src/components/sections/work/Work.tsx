@@ -6,6 +6,7 @@ import Lightbox from 'components/sections/work/lightbox/Lightbox';
 import SummaryMetaMask from 'components/sections/work/summary/MetaMask';
 import SummaryCopper from 'components/sections/work/summary/Copper';
 import SummaryWayvia from 'components/sections/work/summary/Wayvia';
+import SummaryTide from 'components/sections/work/summary/Tide';
 import WorkSideHeading from 'components/sections/work/WorkSideHeading';
 import { WORK_IMG_CONFIGS } from 'components/sections/work/shared/constants';
 import { SECTION_ID } from 'constants/section';
@@ -59,6 +60,9 @@ function WorkSection({ ref }: Props) {
         <SummaryMetaMask />
         <SummaryCopper onOpenLightbox={openLightbox} />
         <SummaryWayvia onOpenLightbox={openLightbox} />
+
+        <WorkSideHeading text="PROJECTS" />
+        <SummaryTide />
 
         <WorkSideHeading text="EDUCATION" />
         <EducationSection />

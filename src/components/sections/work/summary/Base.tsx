@@ -9,6 +9,8 @@ import { WorkImageConfig } from 'components/sections/work/shared/constants';
 
 interface Props {
   companyName: string;
+  companyHref?: string;
+  logoSrc?: string;
   techKeys: readonly TechKey[];
   title: string;
   subtitle: string;
@@ -25,6 +27,8 @@ function Work({ children, ...props }: Props) {
   const {
     className,
     companyName,
+    companyHref,
+    logoSrc,
     title,
     subtitle,
     date,
@@ -42,20 +46,53 @@ function Work({ children, ...props }: Props) {
     <div className={cn('work-col-content max-w-[850rem]', className)}>
       <Fade>
         <div className="u-glass rounded-[10rem] pt-64 pb-16 px-16 sm:px-32 text-center sm:text-left">
-          <h2
-            className="font-heading2 text-shadow-theme block land:inline-block pr-0 land:pr-16
-              tracking-[-0.5rem] sm:tracking-[3rem] text-[var(--theme-work-header)]"
+          <div
+            className={cn(
+              'flex flex-col sm:flex-row items-center gap-24',
+              !logoSrc && 'sm:items-start',
+            )}
           >
-            {title} • {subtitle}
-          </h2>
+            {logoSrc && (
+              <img
+                className="shrink-0 w-[96rem] h-[96rem]"
+                src={logoSrc}
+                alt={`${title} logo`}
+                width={96}
+                height={96}
+              />
+            )}
 
-          <h4 className="block pt-16 sm:pt-32 pb-4 text-[var(--theme-work-sub-header)]">
-            {companyName}
-          </h4>
+            <div className="min-w-0">
+              <h2
+                className="font-heading2 text-shadow-theme block land:inline-block pr-0 land:pr-16
+                  tracking-[-0.5rem] sm:tracking-[3rem] text-[var(--theme-work-header)]"
+              >
+                {title} • {subtitle}
+              </h2>
 
-          <h5 className="text-[var(--theme-work-header)]">
-            {date}
-          </h5>
+              <h4
+                className={cn(
+                  'block pb-4 text-[var(--theme-work-sub-header)]',
+                  logoSrc ? 'pt-8' : 'pt-16 sm:pt-32',
+                )}
+              >
+                {companyHref ? (
+                  <a
+                    className="text-link"
+                    href={companyHref}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {companyName}
+                  </a>
+                ) : companyName}
+              </h4>
+
+              <h5 className="text-[var(--theme-work-header)]">
+                {date}
+              </h5>
+            </div>
+          </div>
 
           <p className="text-body py-32 text-left">
             {children}
