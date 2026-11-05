@@ -13,6 +13,7 @@ function SummaryTide() {
     <SummaryBase
       companyName="tide.ariella.dev"
       companyHref="https://tide.ariella.dev"
+      logoSrc="/images/work/tide-icon.png"
       title="Tide Timers"
       subtitle="Progressive Web App"
       date="Nov 2026"
