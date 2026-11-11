@@ -52,6 +52,9 @@ const RGB = {
   royalPurple_pinkish: '120, 75, 155',        // #784B9B - darker one = #65559A - deprecate?
   spaceCadet: '58, 54, 90',                   // #3A365A - dark purple / grey
   darkPurple: '19, 18, 42',                   // #13122A
+  orchid: '224, 140, 255',                    // #E08CFF
+  paleOrchid: '255, 220, 255',                // #FFDCFF
+  peach: '229, 201, 186',                     // #E5C9BA
 
   // Pink
   // lightPink: '255, 178, 180',              // #FFB2B4
@@ -99,8 +102,8 @@ const light = {
   glassBorder: '1rem solid rgba(255, 255, 255, 0.18)',
 
   error: `rgb(${RGB.upsdellRed})`,
-  link: `rgb(${RGB.yellowCrayola})`,
-  linkHover: `rgb(${RGB.chromeYellow})`,
+  link: `rgb(${RGB.peach})`,
+  linkHover: `rgb(${RGB.paleOrchid})`,
 
   scrollTrack: 'rgba(255, 255, 255, 0.1)',
   scrollThumb: 'rgba(255, 255, 255, 0.6)',
@@ -194,8 +197,8 @@ const dark: Partial<ColorMode> = {
   glassBg: `linear-gradient(70deg, rgba(${RGB.davysGrey}, 0.18), rgba(${RGB.davysGrey}, 0.35))`,
   glassBorder: '1rem solid rgba(120, 120, 120, 0.18)',
 
-  /** @todo: add link color */
-  linkHover: `rgb(${RGB.maximumBlueGreen})`,
+  link: `rgb(${RGB.orchid})`,
+  linkHover: `rgb(${RGB.paleOrchid})`,
 
   scrollTrack: 'rgba(120, 120, 120, 0.1)',
   scrollThumb: 'rgba(250, 250, 250, 0.6)',
