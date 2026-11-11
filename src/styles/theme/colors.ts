@@ -52,6 +52,8 @@ const RGB = {
   royalPurple_pinkish: '120, 75, 155',        // #784B9B - darker one = #65559A - deprecate?
   spaceCadet: '58, 54, 90',                   // #3A365A - dark purple / grey
   darkPurple: '19, 18, 42',                   // #13122A
+  orchid: '224, 140, 255',                    // #E08CFF
+  paleOrchid: '255, 220, 255',                // #FFDCFF
 
   // Pink
   // lightPink: '255, 178, 180',              // #FFB2B4
@@ -90,8 +92,8 @@ const light = {
     + `linear-gradient(217deg, rgba(${RGB.brightYellowCrayola}, 0.8), rgba(${RGB.brightYellowCrayola}, 0) 70.71%),`
     + `linear-gradient(336deg, rgba(${RGB.celeste}, 0.9), rgba(${RGB.celeste}, 1) 70.71%)`,
   backgroundMainMobile: `linear-gradient(127deg, rgba(${RGB.royalPurple}, 0.9), rgba(${RGB.royalPurple}, 0.2) 70.71%),`
-  + `linear-gradient(217deg, rgba(${RGB.brightYellowCrayola}, 0.8), rgba(${RGB.brightYellowCrayola}, 0) 70.71%),`
-  + `linear-gradient(336deg, rgba(${RGB.celeste}, 0.9), rgba(${RGB.celeste}, 1) 70.71%)`,
+    + `linear-gradient(217deg, rgba(${RGB.brightYellowCrayola}, 0.8), rgba(${RGB.brightYellowCrayola}, 0) 70.71%),`
+    + `linear-gradient(336deg, rgba(${RGB.celeste}, 0.9), rgba(${RGB.celeste}, 1) 70.71%)`,
 
   glassBg: 'linear-gradient(70deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.30))',
   glassThickBg: `linear-gradient(70deg, rgba(${RGB.floralWhite}, 0.65), `
@@ -99,8 +101,8 @@ const light = {
   glassBorder: '1rem solid rgba(255, 255, 255, 0.18)',
 
   error: `rgb(${RGB.upsdellRed})`,
-  link: `rgb(${RGB.yellowCrayola})`,
-  linkHover: `rgb(${RGB.chromeYellow})`,
+  link: `rgb(${RGB.purpleMountainMajesty})`,
+  linkHover: `rgb(${RGB.paleOrchid})`,
 
   scrollTrack: 'rgba(255, 255, 255, 0.1)',
   scrollThumb: 'rgba(255, 255, 255, 0.6)',
@@ -181,21 +183,21 @@ const dark: Partial<ColorMode> = {
 
   backgroundMain:
     `radial-gradient(circle at 4% 0%, rgba(${RGB.middleBlue}, 0.3), transparent 23%),`
-  + `radial-gradient(circle at 59% -16%, rgba(${RGB.royalPurple}, 0.5), transparent 21%),`
-  + `radial-gradient(circle at top right, rgba(${RGB.royalPurple}, 0.5), transparent 18%),`
-  + `radial-gradient(circle at 0% 40%, rgba(${RGB.orangeYellowCrayola}, 0.08), transparent 10%),`
-  + `radial-gradient(circle at 100% 87%, rgba(${RGB.orangeYellowCrayola}, 0.08), transparent 8%),`
-  + `radial-gradient(circle at -5% 85%, rgba(${RGB.darkSlateBlue}, 0.8), transparent 33%),`
-  + `radial-gradient(closest-corner at 65% 60%, rgba(${RGB.darkSlateBlue}, 0.8), transparent 85%),`
-  + `radial-gradient(closest-corner at 75% 75%, rgba(${RGB.fandango}, 0.3), transparent 46%)`,
+    + `radial-gradient(circle at 59% -16%, rgba(${RGB.royalPurple}, 0.5), transparent 21%),`
+    + `radial-gradient(circle at top right, rgba(${RGB.royalPurple}, 0.5), transparent 18%),`
+    + `radial-gradient(circle at 0% 40%, rgba(${RGB.orangeYellowCrayola}, 0.08), transparent 10%),`
+    + `radial-gradient(circle at 100% 87%, rgba(${RGB.orangeYellowCrayola}, 0.08), transparent 8%),`
+    + `radial-gradient(circle at -5% 85%, rgba(${RGB.darkSlateBlue}, 0.8), transparent 33%),`
+    + `radial-gradient(closest-corner at 65% 60%, rgba(${RGB.darkSlateBlue}, 0.8), transparent 85%),`
+    + `radial-gradient(closest-corner at 75% 75%, rgba(${RGB.fandango}, 0.3), transparent 46%)`,
 
   backgroundMainMobile: `linear-gradient(217deg, rgba(${RGB.xiketic}, 2), rgba(${RGB.xiketic}, 0) 70.71%)`,
 
   glassBg: `linear-gradient(70deg, rgba(${RGB.davysGrey}, 0.18), rgba(${RGB.davysGrey}, 0.35))`,
   glassBorder: '1rem solid rgba(120, 120, 120, 0.18)',
 
-  /** @todo: add link color */
-  linkHover: `rgb(${RGB.maximumBlueGreen})`,
+  link: `rgb(${RGB.orchid})`,
+  linkHover: `rgb(${RGB.paleOrchid})`,
 
   scrollTrack: 'rgba(120, 120, 120, 0.1)',
   scrollThumb: 'rgba(250, 250, 250, 0.6)',
